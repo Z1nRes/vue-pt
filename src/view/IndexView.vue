@@ -16,7 +16,7 @@
       </div>
     </div>
   </div>
-</template>
+  </template>
 
 <script>
 import axios from 'axios'
@@ -33,6 +33,7 @@ export default {
       .then((response) => {
         this.products = response.data.content
       })
-  }
+  },
+  components: IndexPageVue
 }
 </script>

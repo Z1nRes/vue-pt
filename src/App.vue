@@ -1,6 +1,5 @@
 <template>
   <div class="container py-3">
-    <IndexPageVue/>
   </div>
 </template>
 
@@ -32,11 +31,4 @@ nav a.router-link-exact-active {
 </style>
 
 <script>
-import IndexPageVue from './components/IndexPage.vue'
-
-export default {
-  components: {
-    IndexPageVue
-  }
-}
 </script>

@@ -1,17 +1,27 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import IndexPage from '../components/IndexPage.vue'
-import LoginPage from '../components/LoginPage.vue'
+import IndexView from '../view/IndexView.vue'
+import LoginView from '../view/LoginView.vue'
+import CartView from '../view/CartView.vue'
 
 const routes = [
   {
     path: '/',
     name: 'index',
-    component: IndexPage
+    component: IndexView
   },
   {
     path: '/login',
     name: 'login',
-    component: LoginPage
+    component: LoginView
+  },
+  {
+    path: '/cart',
+    name: 'cart',
+    component: CartView
+  },
+  {
+    path: '/page-not-found',
+    component: { render: (h) => h('div', '404! Page Not Found!') }
   }
 ]
 
